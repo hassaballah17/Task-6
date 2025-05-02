@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+
+kind: Deployment
+
+metadata:
+  name: ahmedhassaballah
+
+spec:
+  replicas: 4
+  selector:
+    matchLabels:
+      app: ahmedhassaballah
+  template:
+    metadata:
+      labels:
+        app: ahmedhassaballah
+    spec:
+      containers:
+        - name: ahmedhassaballah
+          image: hassaballah/52-2383:1.0
+          ports:
+            - containerPort: 8080
+          env:
+            - name: name
+              value: "Ahmed_Hassaballah"
+            - name: id
+              value: "52-2383"

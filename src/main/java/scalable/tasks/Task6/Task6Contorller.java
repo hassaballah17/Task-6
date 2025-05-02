@@ -9,10 +9,10 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/task6")
 public class Task6Contorller {
 
-    @Value("${name}")
+    @Value("Ahmed_Hassaballah")
     String name;
 
-    @Value("${id}")
+    @Value("52_2383")
     String id;
 
     @GetMapping("/hello")
